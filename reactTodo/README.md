@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+Vite, React, TypeScript and Firebase Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Todo application built with Vite, React, TypeScript, and Firebase Firestore. It allows you to add, display, and manage tasks.
 
-Currently, two official plugins are available:
+Project was developed on:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Node.js 20.8.0
+    npm 10.1.0
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Build Command: `npm run vercel-build` or `npm run build`
+- Development Command: None
+- Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+- Output Directory: `public` if it exists, or `.`
+  ? Want to modify these settings? no
+  🔗 Linked to stanleys-projects-f17bc1c9/tsreact-todo-app (created .vercel and added it to .gitignore)
+  🔍 Inspect: https://vercel.com/stanleys-projects-f17bc1c9/tsreact-todo-app/3voB1yHau4DpuFQCpLazyo5wzUHX [2s]
+  ✅ Production: https://tsreact-todo-ds5gq56u0-stanleys-projects-f17bc1c9.vercel.app [2s]
+  📝 Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+  💡 To change the domain or build command, go to https://vercel.com/stanleys-projects-f17bc1c9/tsreact-todo-app/settings
