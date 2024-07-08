@@ -71,7 +71,17 @@ const App: React.FC = () => {
                     }
                   />
                   {task.title}
+                  <br></br>
+                  <span>
+                    &emsp; Created on:&nbsp;
+                    {task.createdAt.toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </span>
                 </label>
+                <p></p>
               </li>
             ))}
           </ul>
