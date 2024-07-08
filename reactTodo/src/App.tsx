@@ -1,7 +1,6 @@
 import { useState, useEffect, FormEvent } from "react";
 import { Task } from "./types";
-import { addTask, getTasks } from "../utils/taskUtils";
-import { v4 as uuidV4 } from "uuid";
+import { addTask, getTasks, updateTaskStatus } from "../utils/taskUtils";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -21,15 +20,27 @@ const App: React.FC = () => {
     if (taskTitle.trim() === "") return;
 
     const newTask: Task = {
-      id: uuidV4(),
       title: taskTitle,
       completed: false,
       createdAt: new Date(),
     };
 
-    await addTask(newTask);
-    setTasks([...tasks, newTask]);
+    const savedTask = await addTask(newTask);
+    setTasks([...tasks, savedTask]);
     setTaskTitle("");
+  };
+
+  const handleCheckboxClick = async (taskId: string, completed: boolean) => {
+    try {
+      await updateTaskStatus(taskId, completed);
+      setTasks(
+        tasks.map((task) =>
+          task.id === taskId ? { ...task, completed } : task
+        )
+      );
+    } catch (err) {
+      console.log("Error checking task: ", err);
+    }
   };
 
   return (
@@ -52,7 +63,13 @@ const App: React.FC = () => {
             {tasks.map((task) => (
               <li key={task.id}>
                 <label>
-                  <input type="checkbox" checked={task.completed} readOnly />
+                  <input
+                    type="checkbox"
+                    checked={task.completed}
+                    onChange={(e) =>
+                      handleCheckboxClick(task.id!, e.target.checked)
+                    }
+                  />
                   {task.title}
                 </label>
               </li>
