@@ -43,6 +43,10 @@ const App: React.FC = () => {
     }
   };
 
+  const sortedTaskList = tasks
+    .slice()
+    .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+
   return (
     <>
       <div>
@@ -60,7 +64,7 @@ const App: React.FC = () => {
             <button type="submit">Add Task</button>
           </form>
           <ul>
-            {tasks.map((task) => (
+            {sortedTaskList.map((task) => (
               <li key={task.id}>
                 <label>
                   <input
