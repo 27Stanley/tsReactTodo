@@ -11,9 +11,10 @@ Project was developed on:
 - Development Command: None
 - Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
 - Output Directory: `public` if it exists, or `.`
-  ? Want to modify these settings? no
-  🔗 Linked to stanleys-projects-f17bc1c9/tsreact-todo-app (created .vercel and added it to .gitignore)
-  🔍 Inspect: https://vercel.com/stanleys-projects-f17bc1c9/tsreact-todo-app/3voB1yHau4DpuFQCpLazyo5wzUHX [2s]
-  ✅ Production: https://tsreact-todo-ds5gq56u0-stanleys-projects-f17bc1c9.vercel.app [2s]
-  📝 Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
-  💡 To change the domain or build command, go to https://vercel.com/stanleys-projects-f17bc1c9/tsreact-todo-app/settings
+
+
+🔗  Linked to stanleys-projects-f17bc1c9/vercel-react-todo (created .vercel)
+🔍  Inspect: https://vercel.com/stanleys-projects-f17bc1c9/vercel-react-todo/EMghRHASxgNekwchPBmUNQDbbCzT [1s]
+✅  Production: https://vercel-react-todo-ipy6992w8-stanleys-projects-f17bc1c9.vercel.app [1s]
+📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+💡  To change the domain or build command, go to https://vercel.com/stanleys-projects-f17bc1c9/vercel-react-todo/settings
