@@ -9,12 +9,11 @@ Project was developed on:
 
 - Build Command: `npm run vercel-build` or `npm run build`
 - Development Command: None
-- Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+- Install Command: `npm install`
 - Output Directory: `public` if it exists, or `.`
 
-
-🔗  Linked to stanleys-projects-f17bc1c9/vercel-react-todo (created .vercel)
-🔍  Inspect: https://vercel.com/stanleys-projects-f17bc1c9/vercel-react-todo/EMghRHASxgNekwchPBmUNQDbbCzT [1s]
-✅  Production: https://vercel-react-todo-ipy6992w8-stanleys-projects-f17bc1c9.vercel.app [1s]
-📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
-💡  To change the domain or build command, go to https://vercel.com/stanleys-projects-f17bc1c9/vercel-react-todo/settings
+🔗 Linked to stanleys-projects-f17bc1c9/vercel-react-todo (created .vercel)
+🔍 Inspect: https://vercel.com/stanleys-projects-f17bc1c9/vercel-react-todo/EMghRHASxgNekwchPBmUNQDbbCzT [1s]
+✅ Production: https://vercel-react-todo-ipy6992w8-stanleys-projects-f17bc1c9.vercel.app [1s]
+📝 Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+💡 To change the domain or build command, go to https://vercel.com/stanleys-projects-f17bc1c9/vercel-react-todo/settings
